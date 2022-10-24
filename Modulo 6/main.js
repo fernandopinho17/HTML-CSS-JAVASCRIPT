@@ -1,4 +1,4 @@
-const form = document.getElementBy('form-deposito');
+const form = document.getElementById('form-deposito');
 const nomeBeneficiario = document.getElementById('nome-beneficiario');
 let formEValido = false;
 
@@ -7,13 +7,13 @@ function validaNome(Nomecompleto) {
     return nomecomoArray.length >= 2;
 }
 
-form.addEventlistener('submit', function(e) {
+form.addEventListener('submit', function(e) {
     
     e.preventDefault();
 
     const numeroContaBeneficiario = document.getElementById('numero-conta');
     const valorDeposito = document.getElementById('valor-deposito');
-    const mensagemSucesso = `Montante de: <b>$(valorDeposito.value)</b> depositado para o cliente: </b>$(nomeBeneficiario.value)</b> - conta: <b>$(numeroContaBeneficiario.value)</b>`;
+    const mensagemSucesso = `Montante de: <b>${valorDeposito.value}</b> depositado para o cliente: </b>${nomeBeneficiario.value}</b> - conta: <b>${numeroContaBeneficiario.value}</b>`;
     
     formEValido = validaNome(nomeBeneficiario.value)
     if (formEValido)  { 
