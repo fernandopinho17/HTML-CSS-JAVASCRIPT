@@ -14,11 +14,14 @@ form.addEventListener ('enviar', function (e) {
         mensagem.estilo.exibiçaõ = 'bloco';
         mensagem.innerHTML = 'mensagemSucesso';
     } 
-        {
+    
+    
+    {
     mensagem.estilo.cor = 'vermelho';
     mensagem.estilo.exibiçaõ = 'bloco';
     mensagem.innerHTML = 'mensagemError';
     }
+
     
     const timerOfMessage = setTimeout ( clearMessage, 2000);
     
@@ -31,6 +34,5 @@ form.addEventListener ('enviar', function (e) {
     
 
 });
-
 
 
