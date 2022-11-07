@@ -1,0 +1,26 @@
+
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    
+}
+
+body {
+    background-color:gold;
+}
+
+ol {
+    background-color:black;
+    color: white;
+    margin:none;
+}
+
+ol, h2 {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
